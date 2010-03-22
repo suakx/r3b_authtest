@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>r3b_authtest <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'scaffold' %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+	<div id="user_nav">
+	  <% if current_user %>
+	    <%= link_to "Preferences", preferences_url %> | 	<%= link_to "Logout", logout_url %>
+	  <% else %>
+	    <%= link_to "Sign up", register_url %> | 	<%= link_to "Login", login_url %>
+	  <% end %>
+	</div>
+<p class="notice"><%= notice %></p>
+
+<%= yield %>
+
+</body>
+</html>
