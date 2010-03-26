@@ -1,0 +1,9 @@
+ActionMailer::Base.smtp_settings = {
+  :address              => "smtp.gmail.com",
+  :port                 => 587,
+  :domain               => "hogehoge.com",
+  :user_name            => "donotreply",
+  :password             => "hogehoge",
+  :authentication       => "plain",
+  :enable_starttls_auto => true
+}

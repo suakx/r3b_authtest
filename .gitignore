@@ -4,3 +4,4 @@ log/*.log
 tmp/**/*
 ._*
 .DS_Store
+config/initializers/setup_mail.rb
